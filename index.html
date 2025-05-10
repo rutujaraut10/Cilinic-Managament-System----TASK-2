@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clinic Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Clinic Management System</h2>
+
+  <div id="main">
+    <h3>Welcome, <span id="user-role">Receptionist</span></h3>
+    
+    <input type="text" id="patientName" placeholder="Patient Name" />
+    <input type="text" id="symptoms" placeholder="Symptoms" />
+    <input type="text" id="prescription" placeholder="Prescription" />
+    
+    <button onclick="addPatient()">Submit</button>
+
+    <h4>Token: <span id="tokenDisplay">0</span></h4>
+  </div>
+
+  <!-- Firebase Libraries -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+
+  <!-- Config & Script -->
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
